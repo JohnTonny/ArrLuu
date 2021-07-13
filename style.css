@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--main);
+}
+
+:root{
+    --main:#FEFFDE;
+    --primary: #91C788;
+    --secondary:#DDFFBC;
+    --accent: #52734D;
+    --text-white:#fff;
+}
+
+body{
+    color: var(--secondary);
+    /* height: 200vh; */
+}
+.head{
+    /* background-color: var(--accent); */
+    text-align: center;
+    padding: 10px;
+    color: var(--accent);
+    text-shadow: 0 5px 5px var(--primary);
+    font-size: 2em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.container{
+    /* border: solid; */
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 180px;
+    
+}
+.card{
+    margin: 10px;
+    min-width: 200px;
+    height: 200px;
+    /* background-color: var(--secondary); */
+    border: solid var(--primary);
+    border-radius: 20px;
+    overflow: hidden;
+    }
+.card.one>img{
+    width: auto;
+    height: 100%;
+}
+.card.two>img{
+    width: auto;
+    height: 100%;
+}
+.card.three>img{
+    width: auto;
+    height: 100%;
+}
+
+section{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.sar{
+    margin-top: 200px;
+    color: var(--accent);
+    /* background-color:var(--secondary); */
+    text-align: center;
+    font-size: 1em;
+}
+@media screen and (max-width:480px) {
+    .head{
+        text-align: center;
+        /* padding: 5px; */
+        color: var(--accent);
+        text-shadow: 0 5px 5px var(--primary);
+        font-size: 1em;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    }
+    .container{
+        top: 70px;
+    }
+    section{
+        max-width: 450px;
+    }
+}
