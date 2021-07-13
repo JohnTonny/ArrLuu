@@ -86,9 +86,12 @@ section{
         z-index: 2;
     }
     .container{
-        top: 70px;
+        top: 100px;
     }
     section{
         max-width: 450px;
+    }
+    .sar{
+    margin-top: 100px;
     }
 }
